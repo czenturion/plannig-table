@@ -1,0 +1,63 @@
+.itemBoard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    height: 300px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+
+.carousel {
+    width: 500px;
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+.itemBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.item:hover {
+    cursor: grab;
+}
+
+.fileProcessing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.saveButton, .selectButton {
+    font-family: 'Noto Sans', sans-serif;
+    border: 1px solid gray;
+    width: 220px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.1s cubic-bezier(0, 0, 1, 1) 100ms;
+}
+
+.saveButton:hover {
+    background-color: #e6ffdf;
+    box-shadow: #bbffb6 0 4px 8px;
+    cursor: pointer;
+}
+
+.selectButton:hover {
+    background-color: #fffae2;
+    box-shadow: #fff2ae 0 4px 8px;
+    cursor: pointer;
+}
+
+
+.selectInput {
+    display: none;
+}

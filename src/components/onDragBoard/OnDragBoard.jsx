@@ -1,9 +1,11 @@
 import { Layer, Stage } from "react-konva";
 import URLImage from "../urlImage/URLImage";
 import React from "react";
+import s from "./onDragBoard.module.css";
 
 const OnDragBoard = ({ setImages, images, dragUrl, stageRef }) => {
     return <div
+        className={s.onDragBoard}
         onDrop={(e) => {
             e.preventDefault();
             // register event position
@@ -21,6 +23,7 @@ const OnDragBoard = ({ setImages, images, dragUrl, stageRef }) => {
         onDragOver={(e) => e.preventDefault()}
     >
         <Stage
+            className={s.onDragBoardNested}
             width={800}
             height={600}
             style={{width: 800, height: 600, border: '1px solid grey'}}

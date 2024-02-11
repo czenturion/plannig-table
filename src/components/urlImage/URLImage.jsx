@@ -1,11 +1,13 @@
 import useImage from "use-image";
 import {Image} from "react-konva";
 import React from "react";
+import s from "./urlImage.module.css";
 
 const URLImage = ({ image, draggable, onDragStart, onDragMove, onDragEnd }) => {
     const [img] = useImage(image.src);
     return (
         <Image
+            className={s.image}
             image={img}
             x={image.x}
             y={image.y}

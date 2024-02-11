@@ -1,0 +1,8 @@
+.onDragBoard {
+    background-color: #f3f3f3;
+    margin-bottom: 50px;
+}
+
+.onDragBoardNested, .onDragBoard {
+    border-radius: 10px;
+}
